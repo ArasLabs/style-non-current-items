@@ -1,0 +1,3 @@
+<imports>
+  <package name="[PACKAGE NAME HERE]" path="[PACKAGE NAME HERE]\Import" />
+</imports>

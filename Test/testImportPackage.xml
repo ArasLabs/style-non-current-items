@@ -1,0 +1,31 @@
+<testImportPackage>
+	<export>
+		<server>http://localhost/Dev/</server>
+		<database>Dev</database>
+		<login>root</login>
+		<password>innovator</password>
+		<mfFile>.\package\imports.mf</mfFile>
+		<dir>.\package</dir>
+		<log>.\log\export.log</log>
+	</export>
+	<import>
+		<server>http://localhost/Test</server>
+		<database>Test</database>
+		<login>root</login>
+		<password>innovator</password>
+		<mfFile>.\package\imports.mf</mfFile>
+		<dir>.\package</dir>
+		<log>.\log\import.log</log>
+		<description>Imported via testImportPackage</description>
+	</import>
+	<db>
+		<sql>edonahue02\SQLEXPRESS</sql>
+		<name>Test</name> <!-- SHOULD MATCH import/database-->
+		<path>[PATH TO CLEAN BAK FILE]</path>
+		<dir>C:\Aras\Databas4</dir>
+	</db>
+	<versions>
+		<open>SP5</open>
+		<dev>SP7</dev>
+	</versions>
+</testImportPackage>
