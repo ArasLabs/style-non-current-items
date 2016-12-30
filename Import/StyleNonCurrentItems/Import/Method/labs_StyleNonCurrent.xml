@@ -1,0 +1,26 @@
+﻿<AML>
+ <Item type="Method" id="83CCEA6EF96543E18C51145BEBD76646" action="add">
+  <comments>Changes the background color of non-current items' forms</comments>
+  <execution_allowed_to keyed_name="World" type="Identity">A73B655731924CD0B027E4F4D5FCC0A9</execution_allowed_to>
+  <method_code><![CDATA[var itm = document.thisItem;
+var inn = itm.getInnovator();
+
+// if is_current property exists in the cache, use it
+var isCurr = itm.getProperty("is_current","");
+
+// else, retrieve is_current from the database
+if(isCurr === ""){
+    itm = inn.getItemById(itm.getID());
+    isCurr = itm.getProperty("is_current", "");
+}
+
+// set form background color if the item is not current
+var formBody = document.getElementsByTagName("body")[0];
+if (isCurr == "0") {
+    formBody.style.backgroundColor = "#EFEFEF";
+}
+]]></method_code>
+  <method_type>JavaScript</method_type>
+  <name>labs_StyleNonCurrent</name>
+ </Item>
+</AML>
