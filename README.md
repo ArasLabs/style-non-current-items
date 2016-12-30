@@ -97,6 +97,7 @@ The Part form that appears will have a grey background. If you would like to cha
 11. In the resulting dialog, double-click one of the previous generations of the Part.
 
 The Part form that appears will have a watermark image that says "Non Current". If you would like to change the watermark image that is displayed:
+
 1. Add your image to the code tree under `Innovator\Client\customer\`.
 2. Update the HTML source of the `overlay` field on the Part form.
 
