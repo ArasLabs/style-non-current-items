@@ -1,6 +1,6 @@
 # Style Non-Current Items
 
-Demonstrates two ways to style the form of a non-current version of an item.
+This document demonstrates two ways to style the form of a non-current version of an item.
 
 1. Change the background color of the non-current item's form.
 2. Display a watermark/overlay image indicating that the item displayed is not current.
@@ -22,9 +22,9 @@ Internet Explorer 11, Firefox 38 ESR, Chrome
 
 ## How It Works
 
-The project's import package includes two methods - `labs_StyleNonCurrent` and `labs_NonCurrentOverlay`. Both use the same basic logic to determine whether the context item is the current version.
+The project's import package includes two methods - `labs_StyleNonCurrent` and `labs_NonCurrentOverlay`, both of which use the same basic logic to determine whether the context item is the current version.
 
-First we check whether the context item includes the `is_current` property. If so, we proceed with that value. If not, we retrieve the `is_current` property from the server. If the `is_current` property's value is `0`, we style the form accordingly:
+First, we check whether the context item includes the `is_current` property. If so, we proceed with that value. If not, we retrieve the `is_current` property from the server. If the `is_current` property's value is `0`, we style the form accordingly:
 
 - **labs_StyleNonCurrent:** changes the background color of the item's form
 - **labs_NonCurrentOverlay:** displays an HTML field containing a watermark image
@@ -41,7 +41,7 @@ First we check whether the context item includes the `is_current` property. If s
 3. StyleNonCurrentItems import package
 4. StyleNonCurrentItems code tree overlay
 
-### Install Steps
+### Installation Steps
 
 1. Backup your code tree and store the backup in a safe place.
 2. Copy the Innovator folder from the project's CodeTree subdirectory.
@@ -59,7 +59,7 @@ First we check whether the context item includes the `is_current` property. If s
 11. Click **Import** in the top left corner.
 12. Close the Aras Package Import tool.
 
-You are now ready to login to Aras and check out the examples for customizing non-current items' forms.
+You are now ready to login to Aras and check out the examples for customizing 'non-current items' forms.
 
 ## Usage
 
@@ -78,7 +78,7 @@ You are now ready to login to Aras and check out the examples for customizing no
 9. On the Part form, click **View > Revisions**.
 10. In the resulting dialog, double-click one of the previous generations of the Part.
 
-The Part form that appears will have a grey background. If you would like to change the color or style applied to non-current items, you can edit the `labs_StyleNonCurrent` method.
+The Part form that appears will have a grey background. If you would like to change the color or style applied to 'non-current items', you can edit the `labs_StyleNonCurrent` method.
 
 ### Display a Watermark Image
 
@@ -96,7 +96,7 @@ The Part form that appears will have a grey background. If you would like to cha
 10. On the Part form, click **View > Revisions**.
 11. In the resulting dialog, double-click one of the previous generations of the Part.
 
-The Part form that appears will have a watermark image that says "Non Current". If you would like to change the watermark image that is displayed:
+The Part form that appears will have a watermark image that says "Non Current". To change the watermark image being displayed:
 
 1. Add your image to the code tree under `Innovator\Client\customer\`.
 2. Update the HTML source of the `overlay` field on the Part form.
