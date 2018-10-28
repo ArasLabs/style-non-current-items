@@ -1,6 +1,6 @@
 # Style Non-Current Items
 
-Demonstrates two ways to style the form of a non-current version of an item.
+Following demonstrates two ways to style the form of a non-current version of an item:
 
 1. Change the background color of the non-current item's form.
 2. Display a watermark/overlay image indicating that the item displayed is not current.
@@ -22,26 +22,26 @@ Internet Explorer 11, Firefox 38 ESR, Chrome
 
 ## How It Works
 
-The project's import package includes two methods - `labs_StyleNonCurrent` and `labs_NonCurrentOverlay`. Both use the same basic logic to determine whether the context item is the current version.
+The project's import package includes two methods - `labs_StyleNonCurrent` and `labs_NonCurrentOverlay`. Both of these use the same basic logic to determine whether the context item is the current version.
 
-First we check whether the context item includes the `is_current` property. If so, we proceed with that value. If not, we retrieve the `is_current` property from the server. If the `is_current` property's value is `0`, we style the form accordingly:
+First, we check whether the context item includes the `is_current` property. If so, we proceed with that value. If not, we retrieve the `is_current` property from the server. If the `is_current` property's value is `0`, we style the form accordingly:
 
 - **labs_StyleNonCurrent:** changes the background color of the item's form
 - **labs_NonCurrentOverlay:** displays an HTML field containing a watermark image
 
-## Installation
+## Installation:
 
 #### Important!
 **Always back up your code tree and database before applying an import package or code tree patch!**
 
-### Pre-requisites
+### Pre-requisites:
 
 1. Aras Innovator installed (version 11.0 SPx preferred)
 2. Aras Package Import tool
 3. StyleNonCurrentItems import package
 4. StyleNonCurrentItems code tree overlay
 
-### Install Steps
+### Steps to install:
 
 1. Backup your code tree and store the backup in a safe place.
 2. Copy the Innovator folder from the project's CodeTree subdirectory.
