@@ -10,6 +10,6 @@ Indicates the result of the latest testing. Projects are tested in the version t
 
 ### Results
 
-            | IE 11      | FF 38 ESR  | Chrome     
+|  Version  | IE 11      | FF 38 ESR  | Chrome     
 ------------|------------|------------|------------
 Aras 11 SP7 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
