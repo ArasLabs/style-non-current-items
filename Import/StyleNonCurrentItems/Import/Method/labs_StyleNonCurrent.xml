@@ -6,18 +6,21 @@
 var inn = itm.getInnovator();
 
 // if is_current property exists in the cache, use it
-var isCurr = itm.getProperty("is_current","");
+var isCurr = itm.getProperty("is_current", "");
+var createdOn = itm.getProperty("created_on");
 
-// else, retrieve is_current from the database
-if(isCurr === ""){
-    itm = inn.getItemById(itm.getID());
-    isCurr = itm.getProperty("is_current", "");
-}
+if (createdOn !== undefined) {
+    // else, retrieve is_current from the database
+    if (isCurr === "") {
+        itm = inn.getItemById(itm.getID());
+        isCurr = itm.getProperty("is_current", "");
+    }
 
-// set form background color if the item is not current
-var formBody = document.getElementsByTagName("body")[0];
-if (isCurr == "0") {
-    formBody.style.backgroundColor = "#EFEFEF";
+    // set form background color if the item is not current
+    var formBody = document.getElementsByTagName("body")[0];
+    if (isCurr == "0") {
+        formBody.style.backgroundColor = "#EFEFEF";
+    }
 }
 ]]></method_code>
   <method_type>JavaScript</method_type>
