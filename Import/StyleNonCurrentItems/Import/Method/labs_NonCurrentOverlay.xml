@@ -7,18 +7,21 @@ var inn = itm.getInnovator();
 
 // if is_current property exists in the cache, use it
 var isCurr = itm.getProperty("is_current","");
+var createdOn = itm.getProperty("created_on");
 
-// else, retrieve is_current from the database
-if(isCurr === ""){
-    itm = inn.getItemById(itm.getID());
-    isCurr = itm.getProperty("is_current", "");
-}
-
-// show overlay image field
-var overlay = document.getElementById("img-overlay");
-if (isCurr == "0") {
-    overlay.style.visibility = "visible";
-    overlay.style.display = "";
+if(createdOn !== undefined) {
+    // else, retrieve is_current from the database
+    if(isCurr === ""){
+        itm = inn.getItemById(itm.getID());
+        isCurr = itm.getProperty("is_current", "");
+    }
+    
+    // show overlay image field
+    var overlay = document.getElementById("img-overlay");
+    if (isCurr == "0") {
+        overlay.style.visibility = "visible";
+        overlay.style.display = "";
+    }
 }
 ]]></method_code>
   <method_type>JavaScript</method_type>
