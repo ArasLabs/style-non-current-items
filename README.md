@@ -9,6 +9,7 @@ Demonstrates two ways to style the form of a non-current version of an item.
 
 Release | Notes
 --------|--------
+[v1.1.0](https://github.com/ArasLabs/style-non-current-items/releases/tag/v1.1.0) | Updated code for new part bug; verified on 12.0 
 [v1.0.1](https://github.com/ArasLabs/style-non-current-items/releases/tag/v1.0.1) | Tested 11.0 SP12, SP15. Tested on Edge, Firefox 60 ESR, Chrome.
 [v1.0.0](https://github.com/ArasLabs/style-non-current-items/releases/tag/v1.0.0) | First release. Tested on Internet Explorer 11, Firefox 38 ESR, Chrome. Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
@@ -16,10 +17,9 @@ Release | Notes
 
 Project | Aras
 --------|------
+[v1.1.0](https://github.com/ArasLabs/style-non-current-items/releases/tag/v1.1.0) | 10.0+, 11.0+, 12.0+ 
 [v1.0.1](https://github.com/ArasLabs/style-non-current-items/releases/tag/v1.0.1) | 10.0 SPx, 11.0 SP7+, 11.0 SP12+, 11.0 SP15
 [v1.0.0](https://github.com/ArasLabs/style-non-current-items/releases/tag/v1.0.0) | 10.0 SPx, 11.0 SP7; Old Community Board Migration
-
-> Though built and tested using Aras 11.0 SP7, this project should function in older releases of Aras 11.0 and Aras 10.0.
 
 ## How It Works
 
@@ -37,7 +37,7 @@ First we check whether the context item includes the `is_current` property. If s
 
 ### Pre-requisites
 
-1. Aras Innovator installed (version 11.0 SPx preferred)
+1. Aras Innovator installed (current released version preferred)
 2. Aras Package Import tool
 3. StyleNonCurrentItems import package
 4. StyleNonCurrentItems code tree overlay
@@ -66,7 +66,7 @@ You are now ready to login to Aras and check out the examples for customizing no
 
 ### Change the Background Color
 
-![Custom Background Color](./Screenshots/bg-color.gif)
+![Custom Background Color](./Screenshots/color_bkg-split.png)
 
 1. Log in to Aras as admin.
 2. Click **Administration > Forms** and search for the Part form.
@@ -76,14 +76,14 @@ You are now ready to login to Aras and check out the examples for customizing no
 6. Save the form.
 7. Click **Design > Parts** in the table of contents (TOC).
 8. Open an existing Part with previous versions (generation > 1).
-9. On the Part form, click **View > Revisions**.
+9. On the Part form, click **Navigate > Revisions**.
 10. In the resulting dialog, double-click one of the previous generations of the Part.
 
 The Part form that appears will have a grey background. If you would like to change the color or style applied to non-current items, you can edit the `labs_StyleNonCurrent` method.
 
 ### Display a Watermark Image
 
-![Watermark Image](./Screenshots/overlay.gif)
+![Watermark Image](./Screenshots/overlay-split.png)
 
 1. Log in to Aras as admin.
 2. Click **Administration > Forms** and search for the Part form.
@@ -94,7 +94,7 @@ The Part form that appears will have a grey background. If you would like to cha
 7. Save the form.
 8. Click **Design > Parts** in the table of contents (TOC).
 9. Open an existing Part with previous versions (generation > 1).
-10. On the Part form, click **View > Revisions**.
+10. On the Part form, click **Navigate > Revisions**.
 11. In the resulting dialog, double-click one of the previous generations of the Part.
 
 The Part form that appears will have a watermark image that says "Non Current". If you would like to change the watermark image that is displayed:
