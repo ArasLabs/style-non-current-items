@@ -66,7 +66,7 @@ You are now ready to login to Aras and check out the examples for customizing no
 
 ### Change the Background Color
 
-![Custom Background Color](./Screenshots/color_bkg-split.png)
+![Custom Background Color](./Screenshots/color_bkg-sbs.png)
 
 1. Log in to Aras as admin.
 2. Click **Administration > Forms** and search for the Part form.
@@ -76,14 +76,15 @@ You are now ready to login to Aras and check out the examples for customizing no
 6. Save the form.
 7. Click **Design > Parts** in the table of contents (TOC).
 8. Open an existing Part with previous versions (generation > 1).
-9. On the Part form, click **Navigate > Revisions**.
+9. On the Part form, click **Navigate > Revisions**. (v12)
+   - On the Part form, click **View > Revisions**. (v11)
 10. In the resulting dialog, double-click one of the previous generations of the Part.
 
 The Part form that appears will have a grey background. If you would like to change the color or style applied to non-current items, you can edit the `labs_StyleNonCurrent` method.
 
 ### Display a Watermark Image
 
-![Watermark Image](./Screenshots/overlay-split.png)
+![Watermark Image](./Screenshots/overlay-sbs.png)
 
 1. Log in to Aras as admin.
 2. Click **Administration > Forms** and search for the Part form.
@@ -94,7 +95,8 @@ The Part form that appears will have a grey background. If you would like to cha
 7. Save the form.
 8. Click **Design > Parts** in the table of contents (TOC).
 9. Open an existing Part with previous versions (generation > 1).
-10. On the Part form, click **Navigate > Revisions**.
+10. On the Part form, click **Navigate > Revisions**. (v12)
+    - On the Part form, click **View > Revisions**. (v11)
 11. In the resulting dialog, double-click one of the previous generations of the Part.
 
 The Part form that appears will have a watermark image that says "Non Current". If you would like to change the watermark image that is displayed:
